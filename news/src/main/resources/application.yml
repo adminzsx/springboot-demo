@@ -1,0 +1,46 @@
+
+#密钥
+aes :
+  secretkey : newso3er0313,/.11
+
+
+###FREEMARKER
+spring :
+  freemarker :
+    allow-request-override : false
+    cache : false
+    check-template-location : true 
+    charset : UTF-8
+    content-type : text/html
+    expose-request-attributes : false
+    expose-session-attributes : false
+    expose-spring-macro-helpers : false
+    suffix : .ftl
+    template-loader-path : classpath:/templates/
+    
+    
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    jdbc-url: jdbc:mysql://47.92.226.6:3306/ibs?characterEncoding=utf8
+    username: root
+    password: jkgj1234
+  main:
+    allow-bean-definition-overriding: true
+
+#MQTT配置信息
+mqtt :
+#MQTT-用户名
+  username: admin
+#MQTT-密码
+  password: password
+ #MQTT-服务器连接地址
+  url: tcp://10.20.23.24:61613
+
+  #MQTT-客户端连接地址
+  clientIp: 10.20.23.24:61613
+  clientPort: 61623
+
+   # 连接服务器默认客户端ID和默认的推送主题
+  producer:
+    clientId: mqttProducer
+    defaultTopic: ktvtopic

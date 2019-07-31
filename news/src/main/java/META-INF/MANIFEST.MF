@@ -1,0 +1,58 @@
+Manifest-Version: 1.0
+Main-Class: com.manage.NewsApplication
+Class-Path: spring-context-5.1.5.RELEASE.jar hawtbuf-1.9.jar spring-aop-
+ 5.1.5.RELEASE.jar jetty-http-9.4.14.v20181114.jar log4j-1.2.17.jar jett
+ y-io-9.4.14.v20181114.jar httpclient-4.5.7.jar httpcore-4.4.11.jar spri
+ ng-tx-5.1.5.RELEASE.jar commons-io-2.5.jar geronimo-jms_1.1_spec-1.1.1.
+ jar spring-boot-test-autoconfigure-2.1.3.RELEASE.jar hamcrest-core-1.3.
+ jar accessors-smart-1.2.jar jaxb-core-2.2.11.jar spring-messaging-5.1.5
+ .RELEASE.jar android-json-0.0.20131108.vaadin1.jar spring-beans-5.1.5.R
+ ELEASE.jar jetty-websocket-7.6.7.v20120910.jar jackson-annotations-2.9.
+ 0.jar spring-integration-core-5.1.3.RELEASE.jar jul-to-slf4j-1.7.25.jar
+  spring-boot-starter-security-2.1.3.RELEASE.jar rome-1.0.jar jaxb-impl-
+ 2.2.11.jar activemq-pool-5.15.8.jar spring-jms-4.3.8.RELEASE.jar json-p
+ ath-2.4.0.jar camel-core-2.19.5.jar assertj-core-3.11.1.jar activemq-cl
+ ient-5.8.0.jar activemq-openwire-legacy-5.15.8.jar geronimo-j2ee-manage
+ ment_1.1_spec-1.0.1.jar spring-boot-2.1.3.RELEASE.jar jsqlparser-1.0.ja
+ r spring-jcl-5.1.5.RELEASE.jar org.eclipse.paho.client.mqttv3-1.2.0.jar
+  activemq-broker-5.15.8.jar mockito-core-2.23.4.jar jackson-module-para
+ meter-names-2.9.8.jar httpmime-4.5.7.jar aspectjweaver-1.9.2.jar spring
+ -boot-starter-freemarker-2.1.3.RELEASE.jar spring-security-config-5.1.4
+ .RELEASE.jar spring-boot-starter-aop-2.1.3.RELEASE.jar jaxb-api-2.3.1.j
+ ar commons-compress-1.18.jar spring-security-web-5.1.4.RELEASE.jar comm
+ ons-lang3-3.4.jar mybatis-spring-boot-starter-1.3.2.jar commons-pool2-2
+ .6.1.jar poi-3.17.jar log4j-core-2.11.2.jar ehcache-2.10.6.jar commons-
+ collections4-4.1.jar byte-buddy-agent-1.9.10.jar xmlpull-1.1.3.1.jar ja
+ ckson-datatype-jsr310-2.9.8.jar log4j-slf4j-impl-2.11.2.jar spring-jdbc
+ -5.1.5.RELEASE.jar xpp3_min-1.1.4c.jar xstream-1.4.4.jar activemq-web-5
+ .8.0.jar slf4j-api-1.7.25.jar spring-boot-autoconfigure-2.1.3.RELEASE.j
+ ar mysql-connector-java-8.0.15.jar activemq-spring-5.15.8.jar curvesapi
+ -1.05.jar xmlbeans-3.0.2.jar spring-boot-starter-integration-2.1.3.RELE
+ ASE.jar jackson-databind-2.9.8.jar spring-boot-starter-web-2.1.3.RELEAS
+ E.jar geronimo-jta_1.0.1B_spec-1.0.1.jar asm-5.0.4.jar reactive-streams
+ -1.0.2.jar jetty-continuation-9.4.14.v20181114.jar spring-expression-5.
+ 1.5.RELEASE.jar validation-api-2.0.1.Final.jar camel-spring-2.19.5.jar 
+ jboss-logging-3.3.2.Final.jar pagehelper-spring-boot-autoconfigure-1.2.
+ 5.jar commons-codec-1.11.jar jackson-core-2.9.8.jar pagehelper-5.1.4.ja
+ r hamcrest-library-1.3.jar spring-boot-test-2.1.3.RELEASE.jar jsonasser
+ t-1.5.0.jar hibernate-validator-6.0.14.Final.jar spring-core-5.1.5.RELE
+ ASE.jar spring-integration-mqtt-5.1.3.RELEASE.jar spring-boot-starter-j
+ son-2.1.3.RELEASE.jar freemarker-2.3.28.jar junit-4.12.jar jetty-util-9
+ .4.14.v20181114.jar spring-context-support-5.1.5.RELEASE.jar java-unrar
+ -1.7.0-8.jar byte-buddy-1.9.10.jar commons-logging-1.1.1.jar guava-18.0
+ .jar jackson-datatype-jdk8-2.9.8.jar mybatis-spring-1.3.2.jar spring-we
+ bmvc-5.1.5.RELEASE.jar objenesis-2.6.jar xbean-spring-3.12.jar json-sma
+ rt-2.3.jar spring-web-5.1.5.RELEASE.jar log4j-api-2.11.2.jar snakeyaml-
+ 1.23.jar jsoup-1.11.2.jar poi-ooxml-4.0.1.jar spring-security-test-5.1.
+ 4.RELEASE.jar xpp3-1.1.4c.jar pagehelper-spring-boot-starter-1.2.5.jar 
+ classmate-1.4.0.jar spring-boot-starter-test-2.1.3.RELEASE.jar mybatis-
+ spring-boot-autoconfigure-1.3.2.jar camel-jms-2.19.5.jar jdom-1.0.jar s
+ pring-boot-starter-jdbc-2.1.3.RELEASE.jar HikariCP-3.2.0.jar spring-ret
+ ry-1.2.4.RELEASE.jar spring-security-core-5.1.4.RELEASE.jar javax.annot
+ ation-api-1.3.2.jar spring-boot-starter-2.1.3.RELEASE.jar reactor-core-
+ 3.2.6.RELEASE.jar log4j-jul-2.11.2.jar xmlunit-core-2.6.2.jar javax.act
+ ivation-api-1.2.0.jar spring-integration-stream-5.1.3.RELEASE.jar mybat
+ is-3.4.6.jar activemq-camel-5.15.8.jar poi-ooxml-schemas-4.0.1.jar spri
+ ng-boot-starter-log4j2-2.1.3.RELEASE.jar fastjson-1.2.9.jar spring-test
+ -5.1.5.RELEASE.jar activemq-jms-pool-5.15.8.jar
+

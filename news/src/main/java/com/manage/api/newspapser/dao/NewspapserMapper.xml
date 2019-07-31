@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.manage.api.newspapser.dao.NewspapserMapper">
+  <resultMap id="BaseResultMap" type="com.manage.api.newspapser.entity.Newspapser">
+    <id column="f_id" jdbcType="INTEGER" property="id" />
+    <result column="f_url" jdbcType="VARCHAR" property="url" />
+    <result column="f_type" jdbcType="INTEGER" property="type" />
+    <result column="f_file_name" jdbcType="VARCHAR" property="filename" />
+    <result column="f_extend_int" jdbcType="INTEGER" property="extendint" />
+    <result column="f_extend_varchar" jdbcType="VARCHAR" property="extendvarchar" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    f_id, f_url, f_type, f_file_name, f_extend_int, f_extend_varchar
+  </sql>
+  <select id="selectByType" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from t_newspapser
+    where f_type = #{type,jdbcType=INTEGER}
+    order by f_file_name desc
+  </select>
+</mapper>

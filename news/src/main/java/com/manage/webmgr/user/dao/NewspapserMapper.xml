@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.manage.webmgr.user.dao.NewspapserMapper" >
+  <resultMap id="BaseResultMap" type="com.manage.webmgr.user.entity.Newspapser" >
+    <id column="f_id" property="fId" jdbcType="INTEGER" />
+    <result column="f_url" property="fUrl" jdbcType="VARCHAR" />
+    <result column="f_type" property="fType" jdbcType="INTEGER" />
+    <result column="f_file_name" property="fFileName" jdbcType="VARCHAR" />
+    <result column="f_extend_int" property="fExtendInt" jdbcType="INTEGER" />
+    <result column="f_extend_varchar" property="fExtendVarchar" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    f_id, f_url, f_type, f_file_name, f_extend_int, f_extend_varchar
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from t_newspapser
+    where f_id = #{fId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from t_newspapser
+    where f_id = #{fId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.manage.webmgr.user.entity.Newspapser" >
+    insert into t_newspapser (f_id, f_url, f_type, 
+      f_file_name, f_extend_int, f_extend_varchar
+      )
+    values (#{fId,jdbcType=INTEGER}, #{fUrl,jdbcType=VARCHAR}, #{fType,jdbcType=INTEGER}, 
+      #{fFileName,jdbcType=VARCHAR}, #{fExtendInt,jdbcType=INTEGER}, #{fExtendVarchar,jdbcType=VARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.manage.webmgr.user.entity.Newspapser" >
+    insert into t_newspapser
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="fId != null" >
+        f_id,
+      </if>
+      <if test="fUrl != null" >
+        f_url,
+      </if>
+      <if test="fType != null" >
+        f_type,
+      </if>
+      <if test="fFileName != null" >
+        f_file_name,
+      </if>
+      <if test="fExtendInt != null" >
+        f_extend_int,
+      </if>
+      <if test="fExtendVarchar != null" >
+        f_extend_varchar,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="fId != null" >
+        #{fId,jdbcType=INTEGER},
+      </if>
+      <if test="fUrl != null" >
+        #{fUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="fType != null" >
+        #{fType,jdbcType=INTEGER},
+      </if>
+      <if test="fFileName != null" >
+        #{fFileName,jdbcType=VARCHAR},
+      </if>
+      <if test="fExtendInt != null" >
+        #{fExtendInt,jdbcType=INTEGER},
+      </if>
+      <if test="fExtendVarchar != null" >
+        #{fExtendVarchar,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.manage.webmgr.user.entity.Newspapser" >
+    update t_newspapser
+    <set >
+      <if test="fUrl != null" >
+        f_url = #{fUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="fType != null" >
+        f_type = #{fType,jdbcType=INTEGER},
+      </if>
+      <if test="fFileName != null" >
+        f_file_name = #{fFileName,jdbcType=VARCHAR},
+      </if>
+      <if test="fExtendInt != null" >
+        f_extend_int = #{fExtendInt,jdbcType=INTEGER},
+      </if>
+      <if test="fExtendVarchar != null" >
+        f_extend_varchar = #{fExtendVarchar,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where f_id = #{fId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.manage.webmgr.user.entity.Newspapser" >
+    update t_newspapser
+    set f_url = #{fUrl,jdbcType=VARCHAR},
+      f_type = #{fType,jdbcType=INTEGER},
+      f_file_name = #{fFileName,jdbcType=VARCHAR},
+      f_extend_int = #{fExtendInt,jdbcType=INTEGER},
+      f_extend_varchar = #{fExtendVarchar,jdbcType=VARCHAR}
+    where f_id = #{fId,jdbcType=INTEGER}
+  </update>
+</mapper>
